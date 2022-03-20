@@ -26,7 +26,7 @@ else
 fi
 
 get_worldwide_mirrors() {
-	echo "https://mirror.pkgbuild.com"
+	echo "https://mirrors.tuna.tsinghua.edu.cn/"
 	_download 'https://archlinux.org/mirrorlist/?country=CN&protocol=http&protocol=https&ip_version=4' | awk '/^## /{if ($2 == "China") { flag=1 } else { flag=0 } } /^#Server/ { if (flag) { sub(/\/\$repo.*/, ""); print $3 } }'
 }
 
