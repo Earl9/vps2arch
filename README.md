@@ -27,7 +27,8 @@ Download the script on your _VPS_ and execute it with root privileges
 
 **WARNING** The script will **delete** any data in your _VPS_!
 
-	wget http://tinyurl.com/vps2arch
+	//wget http://tinyurl.com/vps2arch
+	wget https://raw.githubusercontent.com/Earl9/vps2arch/main/vps2arch
 	chmod +x vps2arch
 	./vps2arch
 
